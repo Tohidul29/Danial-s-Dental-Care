@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "White Teeth Filling",
+        "price": "250",
+        "description": "White fillings can also be called dental composite and they are the tooth-coloured resins used to fill cavities.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcGgCpKIe7iEwK9kLc8_QfoshLH2eLpZ-44QihwZMJovbiGJ3Nufw8Xrn63UJErdWA9s&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "name": "Wisdom Teeth Removal",
+        "price": "150",
+        "description": "The pain and swelling should subside more each day surgery. The second day surgery is the worst day for swelling.",
+        "img": "https://www.finestdentistry.com/wp-content/uploads/images/Cost-wisdom-tooth-removal.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Teeth Replacement",
+        "price": "190",
+        "description": "Dental implants are surgically placed in your jawbone, where they serve as the roots of missing teeth.",
+        "img": "https://cameods.com/tpn/gen/GettyImages-588243262.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Crown Dental",
+        "price": "210",
+        "description": "Dental crowns are tooth-shaped caps that can be placed over your tooth. Think of it like a snug hat for your tooth. ",
+        "img": "https://rectordentalgroup.com/wp-content/uploads/sites/42/2019/05/dental-crown.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bridge Dental",
+        "price": "400",
+        "description": "A dental bridge is a commonly used dental device that consists of one or more artificial teeth made from resin.",
+        "img": "https://ticotimes.net/wp-content/uploads/2020/04/Three-Types-of-Dental-Bridges.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Root Canal",
+        "price": "399",
+        "description": "Root canal is a treatment to repair and save a badly damaged or infected tooth instead of removing it.",
+        "img": "https://www.sakraworldhospital.com/spl_splimgs/root-cancal-treatment-bangalore.jpeg"
+    }
+]

@@ -5,7 +5,7 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
-    const handleLogin = event =>{
+    const handleLogin = event => {
         event.preventDefault();
     }
 
