@@ -21,7 +21,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                     <h3>Treatment with care</h3>
-                    <p>Our Approachable Team offers comprehensive n long term solutions to your dental concerns.</p>
+                    <p> I offer comprehensive and long term solutions to your dental concerns.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
