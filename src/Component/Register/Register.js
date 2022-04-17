@@ -13,13 +13,20 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    let errorMsg;
+
+    if (error) {
+        errorMsg = <div className='text-danger mt-2'>
+            <p>Error: {error.message}</p>
+        </div>
+    }
 
     const navigate = useNavigate();
     const navigateLogin = event => {
         navigate('/login');
     }
 
-    if(user){
+    if (user) {
         navigate('/home');
     }
 
@@ -55,12 +62,12 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="dark" type="submit">
                     Register
                 </Button>
+                {
+                    errorMsg
+                }
             </Form>
             <div className='mt-3'>
                 <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>Login</Link> </p>

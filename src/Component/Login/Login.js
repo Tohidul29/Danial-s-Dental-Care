@@ -13,13 +13,25 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    if(user){
+    const navigate = useNavigate();
+    const navigateHome = event =>{
         navigate('/home');
     }
-
-    const navigate = useNavigate();
     const navigateRegister = event => {
         navigate('/register');
+    }
+
+    if (user) {
+        navigateHome('/home');
+    }
+
+    let errorMsg;
+
+    if (error) {
+        errorMsg =
+            <div className='text-danger mt-2'>
+                <p>Error: {error.message}</p>
+            </div>
     }
 
     const emailRef = useRef('');
@@ -45,12 +57,13 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+
                 <Button variant="dark" type="submit">
                     Login
                 </Button>
+                {
+                    errorMsg
+                }
             </Form>
             <div className='mt-3'>
                 <p>New to Danial's Dental Care? <Link to='/register' className='text-primary text-decoration-none' onClick={navigateRegister}>Register</Link> </p>
