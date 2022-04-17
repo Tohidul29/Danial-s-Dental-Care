@@ -8,7 +8,7 @@ import google from '../images/social logo/google.png'
 
 const SocialLogin = () => {
     const navigate = useNavigate();
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
 
     let errorMsg;
 

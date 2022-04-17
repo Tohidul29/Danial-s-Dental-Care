@@ -1,8 +1,26 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+
 
 const Service = ({ service }) => {
+    const [user] = useAuthState(auth);
     const { img, name, price, description } = service;
+
+    const navigate = useNavigate();
+
+    const handleBtn = event => {
+        if (user) {
+            navigate('/checkout');
+        }
+        if (!user) {
+            navigate('/login');
+        }
+    }
+
+
     return (
         <div className='g-4 col-sm-12 col-md-6 col-lg-4 text-center mx-auto'>
             <Card style={{ width: '20rem' }}>
@@ -13,7 +31,7 @@ const Service = ({ service }) => {
                         {description}
                     </Card.Text>
                     <Card.Title className='my-3'>Cost: ${price}</Card.Title>
-                    <Button variant="dark">Book Appointment</Button>
+                    <Button variant="dark" onClick={() => handleBtn()}>Book Appointment</Button>
                 </Card.Body>
             </Card>
         </div>
