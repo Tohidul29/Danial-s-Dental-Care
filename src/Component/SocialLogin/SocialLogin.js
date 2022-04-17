@@ -3,15 +3,13 @@ import { Button } from 'react-bootstrap';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-
-import google from '../images/social logo/google.png'
+import google from '../images/social logo/google.png';
 
 const SocialLogin = () => {
     const navigate = useNavigate();
-    const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user, error, loading] = useSignInWithGoogle(auth);
 
     let errorMsg;
-
     if (error) {
         errorMsg = <div>
             <p className='text-danger'>Error: {error.message}</p>
