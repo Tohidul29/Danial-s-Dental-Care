@@ -15,14 +15,13 @@ const Blogs = () => {
             </div>
             <div className='my-4'>
                 <h3>3. What other services does firebase provide other than authentication?</h3>
-                <p>Besides authentication firebase can provide us some several benefits. such as:
-                    <ul>
-                        <li>Creation and Managing Databases</li>
-                        <li>Give us a huge storage</li>
-                        <li>Hosting benefit</li>
-                        <li>Helps to changing our app behavior</li>
-                    </ul>
-                </p>
+                Besides authentication firebase can provide us some several benefits. such as:
+                <ul>
+                    <li>Creation and Managing Databases</li>
+                    <li>Give us a huge storage</li>
+                    <li>Hosting benefit</li>
+                    <li>Helps to changing our app behavior</li>
+                </ul>
             </div>
         </div>
     );
