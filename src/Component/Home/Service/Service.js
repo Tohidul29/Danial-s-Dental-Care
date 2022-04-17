@@ -13,7 +13,7 @@ const Service = ({ service }) => {
                         {description}
                     </Card.Text>
                     <Card.Title className='my-3'>Cost: ${price}</Card.Title>
-                    <Button variant="primary">Book Appointment</Button>
+                    <Button variant="dark">Book Appointment</Button>
                 </Card.Body>
             </Card>
         </div>

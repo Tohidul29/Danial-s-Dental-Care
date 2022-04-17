@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
 
@@ -33,8 +34,9 @@ const Register = () => {
                 </Button>
             </Form>
             <div className='mt-3'>
-                <p>Already have an account? <Link to='/login' className='text-primary' onClick={navigateLogin}>login</Link> </p>
+                <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>login</Link> </p>
             </div>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
