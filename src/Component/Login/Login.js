@@ -1,18 +1,36 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const Login = () => {
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    if(user){
+        navigate('/home');
+    }
+
+    const navigate = useNavigate();
+    const navigateRegister = event => {
+        navigate('/register');
+    }
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
     const handleLogin = event => {
         event.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        signInWithEmailAndPassword(email, password);
     }
-
-    const navigate = useNavigate();
-    const navigateRegister = navigate('/register');
 
     return (
         <div className='mt-4 w-50 mx-auto'>
