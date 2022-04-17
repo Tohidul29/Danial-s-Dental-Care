@@ -34,7 +34,7 @@ const Register = () => {
                 </Button>
             </Form>
             <div className='mt-3'>
-                <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>login</Link> </p>
+                <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>Login</Link> </p>
             </div>
             <SocialLogin></SocialLogin>
         </div>
