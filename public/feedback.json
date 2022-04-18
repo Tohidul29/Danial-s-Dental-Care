@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Shakib Al Hasan",
+        "comment": "When I was in America, I got pain on my teeths. Danial's treatment recover me very quickly.",
+        "img": "https://images.news18.com/ibnlive/uploads/2021/08/1628597181_shakib-al-hasan.jpg"
+    },
+    {
+        "id": 2,
+        "name": "MS Dhoni",
+        "comment": "Teeth pain I mean, going to the America and show Mr. Danial. A responsible person I have ever seen.",
+        "img": "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Steve Smith",
+        "comment": "Mr. Danial's treatment is one of the best teeth treatments I have ever seen. God bless you man.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/STEVE_SMITH_%2811705303043%29.jpg/1200px-STEVE_SMITH_%2811705303043%29.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Jennifer Lopez",
+        "comment": "As a singer, I have to keep always smiling and happy. Thanks to Mr. Danial's Treatment. Really love it.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/210120-D-WD757-1975_%2850860511978%29_%28cropped%29.jpg/1200px-210120-D-WD757-1975_%2850860511978%29_%28cropped%29.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Neymar JR",
+        "comment": "In south America it's difficult to get proper teeth treatment. That's why I love to show my pain to Mr. Danial.",
+        "img": "https://images.news18.com/ibnlive/uploads/2021/09/neymar.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Lional Messi",
+        "comment": "Me and Neymar always choose Mr. Danial for our teeth treatment. One of my favorite persons I have ever meet.",
+        "img": "https://cdn.britannica.com/34/212134-050-A7289400/Lionel-Messi-2018.jpg"
+    }
+]
