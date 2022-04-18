@@ -4,16 +4,20 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import logo from '../images/doctor/doctor.png'
 
 const Header = () => {
     const [user] = useAuthState(auth);
-    const handleLogout = () =>{
+    const handleLogout = () => {
         signOut(auth);
     }
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top'>
             <Container>
-                <Navbar.Brand as={Link} to='/'>Danial's Dental Care</Navbar.Brand>
+                <Navbar.Brand as={Link} to='/'>
+                    <img className='mx-3 rounded-circle' height={30} width={30} src={logo} alt="" />
+                    Danial's Dental Care
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

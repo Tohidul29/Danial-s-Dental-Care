@@ -5,9 +5,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Button } from 'react-bootstrap';
 
-const Checkout = () => {
+const Checkout = () => {    
     const handleConfirm = () => {
-        toast('Thanks for your confirmation. I will contact with you soon via Email.');
+        toast(`Thanks for your confirmation. I will contact with you soon via Email.`);
     }
 
     const [user] = useAuthState(auth);
@@ -26,7 +26,7 @@ const Checkout = () => {
             </div>
             <ToastContainer></ToastContainer>
             <div className='my-5 text-center'>
-                <Button className='btn btn-dark' onClick={handleConfirm}>Confirm your appointment</Button>
+                <Button className='btn btn-dark' type='submit' onClick={handleConfirm}>Confirm your appointment</Button>
             </div>
         </div>
     );
